@@ -1,0 +1,97 @@
+{
+    "background": {
+        "page": "bg.html",
+        "persistent": true
+    },
+    "browser_action": {
+        "default_icon": "images/icon_b.png",
+        "default_popup": "popup.html",
+        "default_title": "Flipshope"
+    },
+    "content_scripts": [{
+        "js": ["thirdparty/fsjquery.js", "yureka.js"],
+        "matches": ["*://www.amazon.in/*", "*://www.flipkart.com/*", "*://*.mi.com/*", "*://champ1india.com/*", "*://*.oneplusstore.in/*"],
+        "run_at": "document_end"
+    }, {
+        "css": ["css/coupon.css"],
+        "js": ["thirdparty/fsjquery.js", "coupon.js", "thirdparty/chart.js", "graph.js"],
+        "matches": ["*://www.amazon.in/*", "*://www.flipkart.com/*", "*://www.snapdeal.com/*", "*://*.shopclues.com/*", "*://www.jabong.com/*", "*://www.myntra.com/*", "*://www.ebay.in/*", "*://www.tatacliq.com/*", "*://paytmmall.com/*"],
+        "run_at": "document_end"
+    }, {
+        "css": ["css/coupon.css"],
+        "js": ["thirdparty/fsjquery.js", "senddata.js"],
+        "matches": ["*://www.amazon.in/*", "*://www.flipkart.com/*", "*://www.snapdeal.com/*", "*://www.shopclues.com/*", "*://www.jabong.com/*", "*://www.myntra.com/*"],
+        "run_at": "document_end"
+    }, {
+        "css": ["css/coupon.css"],
+        "js": ["thirdparty/fsjquery.js", "websites/flipkart.js"],
+        "matches": ["*://www.flipkart.com/*"],
+        "run_at": "document_end"
+    }, {
+        "css": ["css/coupon.css"],
+        "js": ["thirdparty/fsjquery.js", "helper.js", "websites/amazon.js"],
+        "matches": ["*://www.amazon.in/*"],
+        "run_at": "document_end"
+    }, {
+        "css": ["css/coupon.css"],
+        "js": ["thirdparty/fsjquery.js", "websites/shopclues.js"],
+        "matches": ["*://www.shopclues.com/*"],
+        "run_at": "document_end"
+    }, {
+        "css": ["css/coupon.css"],
+        "js": ["thirdparty/fsjquery.js", "helper.js", "websites/snapdeal.js"],
+        "matches": ["*://www.snapdeal.com/*"],
+        "run_at": "document_end"
+    }, {
+        "css": ["css/coupon.css"],
+        "js": ["thirdparty/fsjquery.js", "helper.js", "websites/paytm.js"],
+        "matches": ["*://*.paytm.com/*", "*://*.paytmmall.com/*"],
+        "run_at": "document_end"
+    }, {
+        "css": ["css/coupon.css"],
+        "js": ["thirdparty/fsjquery.js", "websites/jabong.js"],
+        "matches": ["*://www.jabong.com/*"],
+        "run_at": "document_end"
+    }, {
+        "css": ["css/coupon.css"],
+        "js": ["thirdparty/fsjquery.js", "websites/myntra.js"],
+        "matches": ["*://www.myntra.com/*"],
+        "run_at": "document_end"
+    }, {
+        "css": ["css/productSubscribe.css"],
+        "js": ["thirdparty/fsjquery.js", "productSubscribe.js"],
+        "matches": ["*://www.flipkart.com/*", "*://paytm.com/*", "*://www.snapdeal.com/*", "*://www.shopclues.com/*", "*://www.myntra.com/*"],
+        "run_at": "document_end"
+    }, {
+        "js": ["thirdparty/fsjquery.js", "letv.js"],
+        "matches": ["*://*.lemall.com/*"],
+        "run_at": "document_end"
+    }, {
+        "css": ["css/coupon.css"],
+        "js": ["thirdparty/fsjquery.js", "coupon.js", "signup.js"],
+        "matches": ["*://*.1mg.com/*", "*://*.abhibus.com/*", "*://*.abof.com/*", "*://*.adidas.co.in/*", "*://*.agoda.com/*", "*://*.airasia.com/*", "*://*.airtel.in/*", "*://*.airvistara.com/*", "*://aliexpress.com/*", "*://*.americanswan.com/*", "*://*.archiesonline.com/*", "*://*.askmebazaar.com/*", "*://*.askmegrocery.com/*", "*://*.babyoye.com/*", "*://*.basicslife.com/*", "*://*.bewakoof.com/*", "*://*.bharatmatrimony.com/*", "*://*.bigbasket.com/*", "*://*.bigrock.in/*", "*://*.bluestone.com/*", "*://*.booking.com/*", "*://*.bookmyshow.com/*", "*://*.cardekho.com/*", "*://*.cleartrip.com/*", "*://coke2home.com/*", "*://*.communitymatrimony.com/*", "*://*.craftsvilla.com/*", "*://*.cromaretail.com/*", "*://*.dailyobjects.com/*", "*://*.dominos.co.in/*", "*://*.easemytrip.com/*", "*://*.ebay.in/*", "*://*.expedia.co.in/*", "*://*.ezoneonline.in/*", "*://*.faballey.com/*", "*://*.fabbag.com/*", "*://*.fabfurnish.com/*", "*://*.fashionandyou.com/*", "*://*.fashionara.com/*", "*://*.fnp.com/*", "*://*.firstcry.com/*", "*://*.foodpanda.in/*", "*://*.freecharge.in/*", "*://*.giftease.com/*", "*://*.globusfashion.com/*", "*://*.godaddy.com/*", "*://*.goibibo.com/*", "*://*.greendust.com/*", "*://grofers.com/*", "*://*.groupon.com/*", "*://*.happilyunmarried.com/*", "*://*.healthgenie.in/*", "*://*.healthkart.com/*", "*://*.high5store.com/*", "*://*.hopscotch.in/*", "*://*.hostgator.in/*", "*://*.hostingraja.in/*", "*://ideacellular.com/*", "*://shopping.indiatimes.com/*", "*://*.goindigo.in/*", "*://*.infibeam.com/*", "*://*.kfc.co.in/*", "*://*.koovs.com/*", "*://*.lenovo.com/*", "*://*.lenskart.com/*", "*://*.makemytrip.com/*", "*://*.meraevents.com/*", "*://*.mobikwik.com/*", "*://in.musafir.com/*", "*://*.mytatasky.com/*", "*://*.naaptol.com/*", "*://*.naturesbasket.co.in/*", "*://*.net4.in/*", "*://*.nykaa.com/*", "*://*.olacabs.com/*", "*://*.oyorooms.com/*", "*://paytm.com/*", "*://*.pepperfry.com/*", "*://*.pizzahut.co.in/*", "*://*.printland.in/*", "*://*.printvenue.com/*", "*://in.puma.com/*", "*://purplle.com/*", "*://*.pvrcinemas.com/*", "*://*.redbus.in/*", "*://shopping.rediff.com/*", "*://*.rummycircle.com/*", "*://*.shaadi.com/*", "*://*.shopcj.com/*", "*://*.shoppersstop.com/*", "*://*.swiggy.com/*", "*://tatadocomo.com/*", "*://*.themobilestore.in/*", "*://*.thomascook.in/*", "*://*.ticketgoose.com/*", "*://*.ticketnew.com/*", "*://*.tolexo.com/*", "*://*.travelguru.com/*", "*://*.trendin.com/*", "*://*.uber.com/*", "*://*.urbanladder.com/*", "*://in.via.com/*", "*://*.vistaprint.in/*", "*://*.voxpop.com/*", "*://*.yatra.com/*", "*://*.yepme.com/*", "*://*.zivame.com/*", "*://*.zomato.com/*", "*://*.zoomcar.com/*", "*://*.zopnow.com/*", "*://zovi.com/*"]
+    }, {
+        "js": ["cz.js"],
+        "matches": ["*://*.irctc.co.in/*", "*://*.gadgetnation.com/*", "*://*.gadgetsnow.com/*", "*://*.gizbot.com/*", "*://*.flashsaletricks.com/*", "*://*.fonearena.com/*", "*://www.facebook.com/*", "*://*.coolztricks.com/*", "*://*.gadgetstouse.com/*", "*://*.earticleblog.com/*", "*://*.91mobiles.com/*", "*://*.gsmarena.com/*", "*://*.verifiedloot.com/*", "*://*.lenovo.com /*", "*://*.priceraja.com/*", "*://*.rechargeaddict.in/*", "*://*.mysmartprice.com/*", "*://*.bgr.in//*", "*://*.pricebaba.com/*", "*://*.digit.in/*", "*://*.findyogi.com/*", "*://*.compareraja.in/*", "*://*.gsmarena.com/*", "*://*.smartprix.com/*", "*://*.candytricks.in/*", "*://*.digitaltrends.com/*", "*://www.google.com/*", "*://www.google.co.in/*"]
+    }, {
+        "css": ["css/coupon.css"],
+        "js": ["thirdparty/fsjquery.js", "signup.js"],
+        "matches": ["*://*.airbnb.co.in/*"]
+    }],
+    "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
+    "description": "Automatically find and apply coupon codes in one click, Get features like Auto buy, Price Graph, Compare and much more",
+    "homepage_url": "https://flipshope.com",
+    "icons": {
+        "128": "images/icon_a.png",
+        "19": "images/icon_d.png",
+        "32": "images/favicon.png"
+    },
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmPrwDfpbZTWMMttSMUD2ft1WAoPAlGyUeQRd3u5oytoUa9SxIfArfsvRPHKVzmTKO9bjInAwlzdDwRBSQkBg8/OlkLv2MyNvT29mo/xhnA478TtePMCAJI919T2Lhj14AgnuhINRETV8wduM5CFgWdZ8VpVsL3n4lTQzwD6K0mDmFD1tAiY315RDAV9GUpLeMPuBfr2GhRRGFck5ayrafVzGTXjg6Z38QlBSaOs4FDRC98dDk4AtE5ucD9C6HB47HZDgZV+3UGX1GFESGrGDf3Pq9Ev+EXrmEAfBUcNrPDHV3HGeSc5lqldrvHnrGdudiqcOcRbe+CXfEsIQ4KJ/VwIDAQAB",
+    "manifest_version": 2,
+    "name": "FlipShope- Redmi Note 5 Pro, Mi TV autobuy",
+    "permissions": ["clipboardWrite", "contextMenus", "notifications", "tabs", "http://*/*", "https://*/*", "cookies", "gcm", "webRequest", "webRequestBlocking"],
+    "short_name": "Flipshope",
+    "update_url": "https://clients2.google.com/service/update2/crx",
+    "version": "1.4.163",
+    "web_accessible_resources": ["option.html", "coupon.js", "thirdparty/fsjquery.js", "images/flipshopelogo5.png", "ys.js", "images/loading.gif", "images/smily.png", "images/feltso.png", "images/coupon_icon.png", "images/deals_icon.png", "images/graph_icon.png", "images/compare_icon.png", "images/copy.png", "images/alt.png", "images/facebook.png", "images/twitter.png", "images/add.png", "images/help.png", "images/autocoupon_btn.jpg", "images/coupons_found.svg", "images/coupons_not_found.png", "images/flipshopelogo.png", "images/icon-close.png", "images/icon_a.png", "popupIframe.html", "css/coupon.css", "js/flip-coupon.js", "images/IconeAW.png", "images/logo.png", "images/doffer.jpg", "senddata.js", "graph.js", "cz.js", "signup.js", "helper.js", "websites/flipkart.js", "websites/amazon.js", "websites/shopclues.js", "websites/snapdeal.js", "websites/paytm.js", "websites/jabong.js", "websites/myntra.js"]
+}

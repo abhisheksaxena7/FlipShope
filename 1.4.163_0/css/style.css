@@ -1,0 +1,593 @@
+/* Original Source: http://meyerweb.com/eric/tools/css/reset/ */html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}body {line-height: 1;}ol, ul {list-style: none;}blockquote, q {quotes:none;}blockquote:before, blockquote:after, q:before, q:after {content: '';content: none;}:focus {outline: 0;}ins {text-decoration: none;}del {text-decoration: line-through;}table {border-collapse: collapse;border-spacing: 0;}
+body {background:#fff;font-size:87.5%;font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;font-weight:300;color:#8c8a8b;text-align:center;line-height:1.7em;}
+a:link, a:visited, strong {color:#e15d46;}
+a:hover {text-decoration:none;}
+h1 {font-size:6em;font-family: 'Engagement', cursive;line-height:1.89em;text-shadow:1px 1px 0px #fff, 2px 2px 0px rgba(0, 0, 0, 0.1), 3px 3px 0px #fff, 4px 4px 0px rgba(0, 0, 0, 0.1), 5px 5px 0px #fff;}
+.left {float:left;}
+.right {float:right;}
+form {width:560px;margin:0px auto;text-align:left;}
+p {padding:23px 0px;border-top:1px dotted #c7c7c7;}
+li {padding:26px 0px;border-top:1px dotted #c7c7c7;min-height:27px;}
+
+/*****************/
+/* The actual form */
+/*****************/
+
+label {
+	float:left;
+	width:180px;
+}
+
+input, 
+select, 
+textarea, 
+.button1 {
+	background:#fff;
+	font-size:1em;
+	font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight:300;
+	color:#8c8a8b;
+}
+
+input[type=text], 
+input[type=password], 
+input[type=email], 
+input[type=tel],
+textarea {
+	border:1px solid #c7c7c7;
+	outline:5px solid rgba(0, 0, 0, 0.1);
+	padding:3px 5px;
+}
+
+input[type=text]:focus, 
+input[type=text]:active, 
+input[type=password]:active, 
+input[type=password]:focus, 
+input[type=email]:active, 
+input[type=email]:focus, 
+input[type=tel]:active, 
+input[type=tel]:focus, 
+textarea:active, 
+textarea:focus {
+	outline:5px solid rgba(0, 0, 0, 0.2);
+}
+
+textarea {
+	height:174px;
+}
+
+.button1 {
+	background: #f2f2f2; /* Old browsers */
+	background: -moz-linear-gradient(top, #f2f2f2 0%, #e8e8e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(100%,#e8e8e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f2f2f2 0%,#e8e8e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f2f2f2 0%,#e8e8e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f2f2f2 0%,#e8e8e8 100%); /* IE10+ */
+	background: linear-gradient(top, #f2f2f2 0%,#e8e8e8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */
+	/* Generated on http://www.colorzilla.com/gradient-editor/ */
+	-webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1);
+	-moz-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1);
+	box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1); 
+	border-color: #eeeced #eeeced #9b9b9b;
+    border-style: solid;
+    border-width: 1px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	padding:5px 30px;
+	font-weight:bold;
+	text-shadow:0px 1px 0px #fff;
+	cursor:pointer;
+}
+
+.button1:hover {
+	background:#f5f5f5;
+}
+
+.button1:focus, 
+.button1:active {
+	background:#e8e8e8;
+}
+
+.button1.action {
+	background: #fa765f; /* Old browsers */
+	background: -moz-linear-gradient(top, #fa765f 0%, #e15d46 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fa765f), color-stop(100%,#e15d46)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #fa765f 0%,#e15d46 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #fa765f 0%,#e15d46 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #fa765f 0%,#e15d46 100%); /* IE10+ */
+	background: linear-gradient(top, #fa765f 0%,#e15d46 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fa765f', endColorstr='#e15d46',GradientType=0 ); /* IE6-9 */
+	-webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 179, 166, 1);
+	-moz-box-shadow: inset 0px 1px 0px 0px rgba(255, 179, 166, 1);
+	box-shadow: inset 0px 1px 0px 0px rgba(255, 179, 166, 1); 
+	border-color: #fc7f6b #fc7f6b #d0432f;
+	color:#b13e2d;
+	text-shadow:0px 1px 0px #ffb3a5;
+}
+
+.button1.action:hover {
+	background:#fa765f;
+}
+
+.button1.action:focus, 
+.button1.action:active {
+	background:#e15d46;
+}
+
+/*
+
+Uniform Theme: Sexy Peach
+Version: 1.0
+By: Peter Wimren
+License: Creative Commons Share Alike
+---
+For use with the Uniform plugin:
+http://pixelmatrixdesign.com/uniform/
+
+*/
+
+/* Global Declaration */
+div.selector, 
+div.selector span,
+div.checker span,
+div.radio span,
+div.uploader,
+div.uploader span.action {
+  background-image: url(../images/sprite.png);
+  background-repeat: no-repeat;
+}
+
+.selector, 
+.radio, 
+.checker, 
+.uploader, 
+.selector *, 
+.radio *, 
+.checker *, 
+.uploader *{
+	margin: 0;
+	padding: 0;
+}
+
+/* SPRITES */
+
+/* Select */
+
+div.selector {
+  background-position: -483px -160px;
+  line-height: 32px;
+  height: 32px;float:left;
+}
+
+div.selector span {
+  background-position: right 0px;
+  height: 32px;
+  line-height: 32px;
+}
+.selector option {padding:3px;border-bottom:1px dotted #ccc;}
+div.selector select {
+  top:2px;
+left:10px;border:1px solid #333;
+}
+
+div.selector:active, 
+div.selector.active {
+	background-position: -483px -192px;
+}
+
+div.selector:active span, 
+div.selector.active span {
+	background-position: right -32px;
+}
+
+div.selector.focus, div.selector.hover, div.selector:hover {
+	background-position: -483px -224px;
+}
+
+div.selector.focus span, div.selector.hover span, div.selector:hover span {
+	background-position: right -64px;
+}
+
+div.selector.focus:active,
+div.selector.focus.active,
+div.selector:hover:active,
+div.selector.active:hover {
+	background-position: -483px -256px;
+}
+
+div.selector.focus:active span,
+div.selector:hover:active span,
+div.selector.active:hover span,
+div.selector.focus.active span {
+	background-position: right -96px;
+}
+
+div.selector.disabled,
+div.selector.disabled:active,
+div.selector.disabled.active {
+	background-position: -483px -288px;
+}
+
+div.selector.disabled span,
+div.selector.disabled:active span,
+div.selector.disabled.active span {
+  background-position: right -128px;
+}
+
+/* Checkbox */
+
+div.checker {
+  width: 23px;
+  height: 23px;
+}
+
+div.checker input {
+  width: 23px;
+  height: 23px;
+}
+
+div.checker span {
+  background-position: 0px -320px;
+  height: 23px;
+  width: 23px;
+}
+
+div.checker:active span, 
+div.checker.active span {
+	background-position: -23px -320px;
+}
+
+div.checker.focus span,
+div.checker:hover span {
+	background-position: -46px -320px;
+}
+
+div.checker.focus:active span,
+div.checker:active:hover span,
+div.checker.active:hover span,
+div.checker.focus.active span {
+	background-position: -69px -320px;
+}
+
+div.checker span.checked {
+	background-position: -92px -320px;
+}
+
+div.checker:active span.checked, 
+div.checker.active span.checked {
+	background-position: -115px -320px;
+}
+
+div.checker.focus span.checked,
+div.checker:hover span.checked {
+	background-position: -138px -320px;
+}
+
+div.checker.focus:active span.checked,
+div.checker:hover:active span.checked,
+div.checker.active:hover span.checked,
+div.checker.active.focus span.checked {
+	background-position: -161px -320px;
+}
+
+div.checker.disabled span,
+div.checker.disabled:active span,
+div.checker.disabled.active span {
+	background-position: -184px -320px;
+}
+
+div.checker.disabled span.checked,
+div.checker.disabled:active span.checked,
+div.checker.disabled.active span.checked {
+	background-position: -207px -320px;
+}
+
+/* radio */
+
+div.radio {
+  width: 23px;
+  height: 23px;
+}
+
+div.radio input {
+  width: 23px;
+  height: 23px;
+}
+
+div.radio span {
+  height: 23px;
+  width: 23px;
+  background-position: 0px -343px;
+}
+
+div.radio:active span, 
+div.radio.active span {
+	background-position: -23px -343px;
+}
+
+div.radio.focus span, 
+div.radio:hover span {
+	background-position: -46px -343px;
+}
+
+div.radio.focus:active span,
+div.radio:active:hover span,
+div.radio.active:hover span,
+div.radio.active.focus span {
+	background-position: -69px -343px;
+}
+
+div.radio span.checked {
+	background-position: -92px -343px;
+}
+
+div.radio:active span.checked,
+div.radio.active span.checked {
+	background-position: -115px -343px;
+}
+
+div.radio.focus span.checked, div.radio:hover span.checked {
+	background-position: -138px -343px;
+}
+
+div.radio.focus:active span.checked, 
+div.radio:hover:active span.checked,
+div.radio.focus.active span.checked,
+div.radio.active:hover span.checked {
+	background-position: -161px -343px;
+}
+
+div.radio.disabled span,
+div.radio.disabled:active span,
+div.radio.disabled.active span {
+	background-position: -184px -343px;
+}
+
+div.radio.disabled span.checked,
+div.radio.disabled:active span.checked,
+div.radio.disabled.active span.checked {
+	background-position: -207px -343px;
+}
+
+/* uploader */
+
+div.uploader {
+  background-position: 0px -366px;
+  height: 32px;
+}
+
+div.uploader span.action {
+  background-position: right -494px;
+  height: 24px;
+  line-height: 24px;
+}
+
+div.uploader span.filename {
+  height: 24px;
+  /* change this line to adjust positioning of filename area */
+  margin: 4px 0px 4px 0px;
+  line-height: 24px;
+}
+
+div.uploader.focus,
+div.uploader.hover,
+div.uploader:hover {
+  background-position: 0px -430px;
+}
+
+div.uploader.focus span.action,
+div.uploader.hover span.action,
+div.uploader:hover span.action {
+	background:#f2f2f2;
+}
+
+div.uploader.active span.action,
+div.uploader:active span.action {
+  background-position: right -558px;
+}
+
+div.uploader.focus.active span.action,
+div.uploader:focus.active span.action,
+div.uploader.focus:active span.action,
+div.uploader:focus:active span.action {
+  background-position: right -590px;
+}
+
+div.uploader.disabled {
+  background-position: 0px -398px;
+}
+
+ div.uploader.disabled span.action {
+  background-position: right -462px;
+}
+
+/* PRESENTATION */
+
+/* Select */
+div.selector {
+  margin-bottom:0px;
+  width: 250px;
+  color: #464545;
+  font-size: 14px;cursor:pointer;
+}
+
+div.selector select {
+  width: 250px;
+}
+
+div.selector span {
+  padding: 2px 25px 0px 2px;
+  cursor: pointer;
+ color:#8c8a8b;
+  width: 226px;
+  text-shadow: 0px 1px 0px #fff;
+}
+
+div.selector.disabled span {
+	color: #bbb;
+}
+
+/* checker */
+div.checker {
+  margin-right: 10px;
+}
+
+/* radio */
+div.radio {
+  margin-right: 10px;
+}
+
+/* uploader */
+div.uploader {
+  width: 282px;
+  margin-bottom: 20px;
+  cursor: pointer;  
+  outline:5px solid rgba(0, 0, 0, 0.1);
+}
+
+div.uploader:focus, div.uploader:active {
+  outline:5px solid rgba(0, 0, 0, 0.2);
+}
+
+div.uploader span.action {
+	width: 120px;
+	text-align: center;
+	text-shadow:#fff 0px 1px 0px;
+	font-weight: bold;
+	background: #f2f2f2; /* Old browsers */
+	background: -moz-linear-gradient(top, #f2f2f2 0%, #e8e8e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(100%,#e8e8e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f2f2f2 0%,#e8e8e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f2f2f2 0%,#e8e8e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f2f2f2 0%,#e8e8e8 100%); /* IE10+ */
+	background: linear-gradient(top, #f2f2f2 0%,#e8e8e8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#e8e8e8',GradientType=0 ); /* IE6-9 */
+	-webkit-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1);
+	-moz-box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1);
+	box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 1);
+	border-right:1px solid #c7c7c7;
+	border-left:1px solid #c7c7c7;
+}
+
+div.uploader:focus span.action, div.uploader:active span.action {
+	background:#e8e8e8;
+}
+
+div.uploader span.filename {
+  width: 140px;
+}
+
+div.uploader input {
+  width: 282px;
+}
+
+ div.uploader.disabled span.action {
+  color: #aaa;
+}
+
+ div.uploader.disabled span.filename {
+  border-color: #ddd;
+  color: #aaa;
+}
+/*
+
+CORE FUNCTIONALITY 
+
+Not advised to edit stuff below this line
+-----------------------------------------------------
+*/
+
+.selector select:focus, .radio input:focus, .checker input:focus, uploader input:focus {
+  outline: 0;
+}
+
+/* Select */
+
+ div.selector {
+	position: relative;
+	padding-left: 10px;
+}
+
+ div.selector span {
+	display: block;
+	float: left;
+}
+
+ div.selector select {
+	position: absolute;
+	opacity: 0;
+}
+
+/* checker */
+
+ div.checker {
+	position: relative;
+	float: left;
+}
+
+ div.checker span {
+	display: block;
+	float: left;
+	text-align: center;
+}
+
+div.checker input {
+  opacity: 0;
+  display: inline-block;
+}
+
+/* radio */
+
+div.radio {
+	position: relative;
+	float: left;
+}
+
+div.radio span {
+	display: block;
+	float: left;
+	text-align: center;
+}
+
+ div.radio input {
+  opacity: 0;
+  text-align: center;
+  display: inline-block;
+}
+
+/* uploader */
+
+div.uploader {
+  position: relative;
+  float: left;
+  overflow: hidden;
+}
+
+div.uploader span.action {
+  float: left;
+  display: inline;
+  margin:1px 0px;
+  overflow: hidden;
+  cursor: pointer;
+  padding:3px 0px;
+}
+
+div.uploader span.filename {
+  padding: 0px 10px;
+  float: left;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+div.uploader input {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  float: right;
+}

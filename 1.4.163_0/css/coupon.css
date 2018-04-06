@@ -1,0 +1,980 @@
+
+fsall{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  overflow-x: hidden;
+}
+#fs_close_all
+{
+  height: 10px;
+  width: 10px;
+  background-size: 100%;
+  background-color: transparent;
+  opacity: 1;
+  padding: 0px !important;
+  border-width: initial !important;
+  border-style: none !important;
+  border-color: initial !important;
+  border-image: initial !important;
+  outline: none !important;
+  transition: opacity 0.2s !important;
+  top: 3px;
+  left: 3px;
+  position: absolute;
+  cursor: pointer;
+}
+#fs_all_container:hover #fs_close_all{
+  display: block;
+}
+.fs_side_button:hover #fs_close_all{
+  display: block;
+}
+fsall *{
+  vertical-align: baseline !important;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
+ *  STYLE 7
+ */
+
+ fsall ::-webkit-scrollbar {
+  width: 6px;
+  height: 10px;
+ }
+ fsall ::-webkit-scrollbar-button:start:decrement,
+ fsall ::-webkit-scrollbar-button:end:increment  {
+  display: none;
+ }
+
+ fsall ::-webkit-scrollbar-track-piece  {
+  background-color: #fafafa;
+  -webkit-border-radius: 6px;
+ }
+
+ fsall ::-webkit-scrollbar-thumb:vertical {
+  -webkit-border-radius: 6px;
+  background: #666;
+ }
+
+.fs_background
+{
+  width: 50px;
+  height: 50px;
+  padding: 5px 1px 5px 10px;
+  box-sizing: border-box !important;
+}
+.fs_placeholder
+ {
+  height: 40px;
+  width: 40px;
+ }
+#fs_all_container
+{
+  cursor: move;
+  box-sizing: border-box;
+  padding: 15px 0px;
+  position: fixed;
+  top: 150px;
+  right: -1px;
+  background-color: white;
+  z-index: 99999997;
+  border-radius: 2px 0px 0px 2px;
+  box-shadow: 0px 0px 5px 1px darkgrey;
+}
+ .fs_boot-row{
+  margin-right: -15px;
+  margin-left: -15px;
+ }
+
+ .fs_boot-row:before,
+ .fs_boot-row:after{
+  display: table;
+  content: " ";
+ }
+ .fs_boot-row:after{
+  clear: both;
+ }
+#fs_all_compare .fs_boot-9{
+padding-bottom: 10px;
+}
+div:not(.fs_closed) > .fs_side_button {
+  top: 124px;
+    transform: translate(-300px,300px) rotate(90deg);
+}
+#fs_container{
+  max-height: 320px;
+  height: calc(100vh - 238px);
+}
+ .fs_boot-1, .fs_boot-2, .fs_boot-3, .fs_boot-4, .fs_boot-5, .fs_boot-6, .fs_boot-7,
+ .fs_boot-8, .fs_boot-9, .fs_boot-10, .fs_boot-11, .fs_boot-12{
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+ }
+
+ .fs_boot-1, .fs_boot-2, .fs_boot-3, .fs_boot-4, .fs_boot-5, .fs_boot-6, .fs_boot-7, .fs_boot-8, .fs_boot-9, .fs_boot-10, .fs_boot-11, .fs_boot-12 {
+  float: left;
+ }
+ .fs_boot-1{
+  width: 8.33333333%;
+ }
+ .fs_boot-2{
+  width: 16.66666667%;
+ }
+ .fs_boot-3{
+  width: 25%;
+ }
+ .fs_boot-4{
+  width: 33.33333333%;
+ }
+ .fs_boot-5{
+  width: 41.66666667%;
+ }
+ .fs_boot-6{
+  width: 50%;
+ }
+ .fs_boot-7{
+  width: 58.33333333%;
+ }
+ .fs_boot-8{
+  width: 66.66666667%;
+ }
+ .fs_boot-9{
+  width: 75%;
+ }
+ .fs_boot-10{
+  width: 83.33333333%;
+ }
+ .fs_boot-11{
+  width: 91.66666667%;
+ }
+ .fs_boot-12{
+  width: 100%;
+ }
+
+ .fs_boot-right{
+  text-align: right;
+ }
+ .fs_boot-center{
+  text-align: center;
+ }
+
+ .fs_boot-responsive{
+  max-width: 65px;
+  height: 85px;
+ }
+
+ .fs_boot-input{
+  height: 33px !important;
+  line-height: 19px !important;
+  width: 180px !important;
+  display: block !important;
+  background: #fff !important;
+  padding: 6px 12px !important;
+  border: 1px solid #eaeaea !important;
+  margin: 5px 0px !important;
+  font-size: 14px !important;
+  vertical-align: baseline !important;
+  margin-right: -15px !important;
+ }
+ .pad-l5{
+  padding-left: 5px;
+ }
+.fs_tooltip {
+  display:none;
+  position:absolute;
+  z-index: 9999999999;
+  border:1px solid #333;
+  background-color:#161616;
+  border-radius:5px;
+  padding:10px;
+  color:#fff;
+  font-size:12px Arial;
+}
+
+ /* COMMON fs_bootSTRAP BASED CSS ENDS */
+ 
+
+ 
+
+ .fs_side_container{
+  position: absolute;
+  z-index: 999999999;
+  top:-120px;
+  right: 0;
+  -webkit-transition:all 1.0s ease-in-out;
+  -moz-transition:all 1.0s ease-in-out;
+  -o-transition:all 1.0s ease-in-out;
+  transition:all 1.0s ease-in-out;
+ }
+ .fs_side_button{
+  display: block;
+  z-index: 99999999;
+  position: absolute;
+  -webkit-transition:all 1.0s ease-in-out;
+  -moz-transition:all 1.0s ease-in-out;
+  -o-transition:all 1.0s ease-in-out;
+  transition:all 1.0s ease-in-out;
+ }
+
+ .fs_side_button .fs_icon{
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: -340px;
+  background: #0288D1;
+  color: #fff;
+  box-shadow: 0px 4px 4px -4px rgba(2, 136, 209, 0.8);
+  cursor: pointer;
+  z-index: 99999999;
+  font-size: 32px;
+    font-family: cursive;
+
+  -webkit-transition:all 1.0s ease-in-out;
+  -moz-transition:all 1.0s ease-in-out;
+  -o-transition:all 1.0s ease-in-out;
+  transition:all 1.0s ease-in-out;
+ }
+
+ .fs_icon_desc{
+  -webkit-user-select: none;
+  text-align: center;
+  position: absolute;
+  width: 100px;
+  line-height: 40px;
+  font-size: 21px;
+  padding-right: 10px;
+  left: -300px;
+  background: #0288D1;
+  color: #fff;
+  box-shadow: 0px 4px 4px -4px rgba(2, 136, 209, 0.8);
+  cursor: pointer;
+  z-index: 99999999;
+
+  -webkit-transition:all 1.0s ease-in-out;
+  -moz-transition:all 1.0s ease-in-out;
+  -o-transition:all 1.0s ease-in-out;
+  transition:all 1.0s ease-in-out;
+ }
+
+ .fs_closed  .fs_side_button:hover .fs_icon{
+  left: -440px;
+ }
+ .fs_closed  .fs_side_button:hover .fs_icon_desc{
+  text-align: center;
+  top: 0;
+  /*display: block;*/
+  left: -400px;
+ }
+
+ .fs_sider{
+  z-index: 99999999;
+  right: 0;
+  position: absolute;
+  width: 300px;
+ }
+
+ .fs_side_container.fs_closed{
+  right: -300px;
+
+  -webkit-transition:all 1.0s ease-in-out;
+  -moz-transition:all 1.0s ease-in-out;
+  -o-transition:all 1.0s ease-in-out;
+  transition:all 1.0s ease-in-out;
+ }
+
+ .fs_footer{
+  background: #03A9F4;
+  color: #fff;
+  font-size: 13px;
+  position: relative;
+  z-index: 999999999;
+  text-align: center;
+  padding: 2px;
+  box-shadow: 0px 2px 2px -2px rgba(2, 136, 209, 0.8);
+ }
+ .fs_header{
+  padding: 25px 15px;
+  background: #03A9F4;
+  color: #fff;
+  font-size: 24px;
+  position: relative;
+  z-index: 999999999;
+  text-align: center;
+  font-weight: lighter;
+  box-shadow: 0px 2px 2px -2px rgba(2, 136, 209, 0.8);
+ }
+ .fs_addCoupon{
+  padding: 13px 15px;
+  border: 1px solid #ededed;
+  border-bottom: 0;
+  font-weight: lighter;
+  font-size: 16px;
+  color: #727272;
+  cursor: pointer;
+  background: #fff;
+ }
+ .fs_addCoupon:hover{
+  font-weight: normal;
+  color: #212121;
+  text-decoration: none;
+ }
+ .fs_body{
+  height: calc(100vh - 136px);
+  max-height: 420px;
+  background: #fff;
+  overflow-y: scroll;
+  padding: 0 15px;
+  border: 1px solid #efefef;
+
+  font-size: 18px;
+  position: relative;
+  z-index: 999999999;
+ }
+  .fs_coupon .fs_body
+ {
+  height: calc(100vh - 185px);
+ }
+ .fs_indi_row{
+  cursor: pointer;
+  padding: 0 15px;
+  margin-left: -15px;
+  margin-right: -15px;
+  border-bottom: 1px solid #eaeaea;
+ }
+ .fs_indi_row:hover{
+  background: #efefef;
+ }
+ .fs_date{
+  font-size: 10px;
+  padding: 5px 0px 0px 5px;
+  color: #B6B6B6;
+ }
+ .fs_action_label{
+  color: #727272;
+  padding: 5px;
+ }
+
+ .fs_name{
+  font-size: 14px;
+  color: #212121;
+  padding: 5px;
+ }
+ .fs_address{
+  font-size: 14px;
+  color: #727272;
+  padding: 0 5px;
+
+ }
+ .fs_desc{
+  font-size: 12px;
+  color: #727272;
+  padding: 0 5px;
+ }
+
+ .fs_mail{
+  margin-top: 5px;
+ }
+ .fs_mail, .fs_phone{
+  font-size: 13px;
+  display: block;
+  font-weight: lighter;
+  margin-bottom: 5px;
+  color: #03A9F4;
+ }
+
+
+ .fs_mail i, .fs_phone i{
+  color: #727272;
+ }
+
+ .fs_fs_deals{
+  display: block;
+  padding: 5px 15px;
+ }
+ .fs_image{
+  margin-top: 5px;
+  margin-bottom: 5px;
+ }
+
+
+ .fs_deal_name{
+  display: block;
+  line-height: 18px;
+  margin-top: 10px;
+  margin-bottom: 14px;
+  font-size: 15px;
+  color: #212121;
+  font-weight: lighter;
+  line-height: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  min-height: 40px;
+  overflow-y: ellipsis;
+
+ }
+ .fs_deal_name:hover{
+  font-weight: normal;
+  color: #212121;
+  text-decoration: none;
+ }
+
+ .fs_shop{
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 14px;
+  color: #727272;
+  font-weight: lighter;
+ }
+ .fs_price{
+  padding: 3px 5px;
+  margin-top: -3px;
+  display: inline-block;
+  border: 1px solid #388E3C;
+  background: #4CAF50;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  margin-right: 4px;
+  border-radius: 4px;
+ }
+ .fs_price:hover{
+  background: #388E3C;
+  color: #fff;
+  text-decoration: none;
+ }
+
+
+ /*COUPON COPY*/
+ .fs_coupon_head{
+  display: block;
+  font-size: 14px;
+  color: #747474;
+  padding: 5px 0px;
+  font-weight: lighter;
+  text-decoration: blink;
+ }
+
+ .fs_boot-copy{
+  height: 33px;
+  display: block;
+  background: #fff;
+  color: #2196F3;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 5px 0;
+  margin-left: -30px;
+  text-align: center;
+  vertical-align: baseline;
+  box-shadow: 0px 4px 4px -4px rgba(200, 200, 200, 0.8);
+  border: 1px solid rgba(200,200,200,0.9);
+ }
+ .fs_boot-copy:hover{
+  box-shadow: 0px;
+  color: #fff;
+  background: #2196F3;
+  border: 1px solid #0288D1;
+ }
+ .fs_coupon_row{
+  padding-top: 5px;
+  padding-bottom: 5px;
+ }
+ .fs_coupon_row:hover{
+  box-shadow: 0px 8px 8px -8px rgba(200,200,200,0.8);
+  background: #fff;
+ }
+ .fs_coupon_row:hover .fs_copy-coupon{
+  color: #121212;
+ }
+ .fs_coupon_row:hover .fs_coupon_head{
+  color: #212121;
+ }
+ .fs_powered{
+  color: #888;
+  /*padding: 8px 10px;*/
+  font-size: 12px;
+  line-height: 30px !important;
+ }
+
+.fs_foo-power{
+  height: auto;
+  height: 40px;
+  display: inline-block;
+}
+.fs_foo-power img{
+  height: 30px;
+  vertical-align: middle;
+}
+.fs_foo_power_text{
+  vertical-align: bottom;
+}
+
+
+ /* ==== COLOR STYLES ==== */
+  .fs_coupon .fs_side_button .fs_icon, .fs_coupon .fs_side_button .fs_icon_desc{
+  background: #0288D1;
+ }
+ .fs_coupon .fs_header, .fs_coupon .fs_footer{
+  box-shadow: 0px 2px 2px -2px rgba(2, 136, 209, 0.8);
+  background: #03A9F4;
+ }
+
+ .fs_coupon .fs_mail, .fs_coupon .fs_phone{
+  color: #03A9F4;
+ }
+
+
+
+ .fs_deals .fs_side_button .fs_icon, .fs_deals .fs_side_button .fs_icon_desc{
+  background: #D32F2F;
+  background: #52bab3;
+ }
+ .fs_deals .fs_header, .fs_deals .fs_footer{
+  box-shadow: 0px 2px 2px -2px rgba(2, 136, 209, 0.8);
+  background: #F44336;
+  background: #56b4aa;
+ }
+
+ .fs_deals .fs_mail, .fs_deals .fs_phone{
+  color: #F44336;
+ }
+
+
+.fs_closed
+{
+  z-index: 99999998;
+ }
+ .fs_compare .fs_side_button .fs_icon, .fs_compare .fs_side_button .fs_icon_desc{
+  background: #4CAF50;
+ }
+ .fs_compare .fs_header, .fs_compare .fs_footer{
+  box-shadow: 0px 2px 2px -2px rgba(2, 136, 209, 0.8);
+  background: #8BC34A;
+ }
+
+ .fs_compare .fs_mail, .fs_compare .fs_phone{
+  color: #8BC34A;
+ }
+
+
+.fs_graph
+{
+  padding-top: 100px;
+}
+
+ .fs_graph:not(.fs_closed) .fs_side_button {
+    transform: translate(-800px,800px) rotate(90deg);
+}
+
+
+
+ .fs_graph .fs_side_button .fs_icon, .fs_graph .fs_side_button .fs_icon_desc{
+  background: #00796B;
+  left: -840px;
+ }
+ .fs_graph .fs_side_button .fs_icon_desc{
+  left: -800px;
+ }
+
+  .fs_graph.fs_closed .fs_side_button:hover .fs_icon{
+  left: -940px;
+ }
+ .fs_graph.fs_closed .fs_side_button:hover .fs_icon_desc {
+  top: 0;
+  display: block;
+  left: -900px;
+ }
+
+ .fs_graph .fs_header, .fs_graph .fs_footer{
+  box-shadow: 0px 2px 2px -2px rgba(2, 136, 209, 0.8);
+  background: #009688;
+ }
+
+ .fs_graph .fs_mail, .fs_graph .fs_phone{
+  color: #009688;
+ }
+ .fs_graph .fs_sider{
+  width: 800px;
+ }
+ .fs_graph.fs_side_container.fs_closed{
+  right: -800px;
+ }
+ .fs_graph .fs_body{
+  height: auto;
+ }
+ .fs_graph .fs_indi_row{
+  padding-bottom: 15px;
+  border-bottom: 0px;
+ }
+ .see_more{
+  float: right;
+  font-size: 12px;
+  color: #FF5722 !important;
+ }
+
+.fs_background:nth-of-type(2) .fs_side_button {
+    position: absolute;
+    top: 140px;
+}
+.fs_background:nth-of-type(3) .fs_side_button{
+    position: absolute;
+    top: 190px;
+}
+.fs_background:nth-of-type(4) .fs_side_button{
+    position: absolute;
+    top: 240px;
+}
+.fs_background:nth-of-type(5) .fs_side_button{
+    position: absolute;
+    top: 290px;
+}
+.fs_background:nth-of-type(6) .fs_side_button{
+    position: absolute;
+    top: 340px;
+}
+.fs_background:nth-of-type(7) .fs_side_button{
+    position: absolute;
+    top: 390px;
+}
+#fs_popup_container{
+  animation: initial !important;
+  transition: opacity 0.2s !important;
+  color: initial !important;
+  font-family: initial !important;
+  font-kerning: initial !important;
+  font-size: initial !important;
+  font-stretch: initial !important;
+  font-style: initial !important;
+  font-variant: initial !important;
+  font-weight: initial !important;
+  font-feature-settings: initial !important;
+  -webkit-font-smoothing: initial !important;
+  -webkit-locale: initial !important;
+  text-orientation: initial !important;
+  -webkit-text-orientation: initial !important;
+  writing-mode: initial !important;
+  -webkit-writing-mode: initial !important;
+  text-rendering: initial !important;
+  zoom: initial !important;
+  align-content: initial !important;
+  align-items: initial !important;
+  alignment-baseline: initial !important;
+  align-self: initial !important;
+  backface-visibility: initial !important;
+  background: initial !important;
+  background-blend-mode: initial !important;
+  baseline-shift: initial !important;
+  border: initial !important;
+  border-radius: initial !important;
+  border-collapse: initial !important;
+  bottom: initial !important;
+  box-shadow: initial !important;
+  box-sizing: initial !important;
+  break-after: initial !important;
+  break-before: initial !important;
+  break-inside: initial !important;
+  buffered-rendering: initial !important;
+  caption-side: initial !important;
+  clear: initial !important;
+  clip: initial !important;
+  clip-path: initial !important;
+  clip-rule: initial !important;
+  color-interpolation: initial !important;
+  color-interpolation-filters: initial !important;
+  color-rendering: initial !important;
+  column-fill: initial !important;
+  contain: initial !important;
+  content: initial !important;
+  counter-increment: initial !important;
+  counter-reset: initial !important;
+  cursor: initial !important;
+  cx: initial !important;
+  cy: initial !important;
+  d: initial !important;
+  display: initial !important;
+  dominant-baseline: initial !important;
+  empty-cells: initial !important;
+  fill: initial !important;
+  fill-opacity: initial !important;
+  fill-rule: initial !important;
+  filter: initial !important;
+  flex: initial !important;
+  flex-flow: initial !important;
+  float: initial !important;
+  flood-color: initial !important;
+  flood-opacity: initial !important;
+  height: initial !important;
+  hyphens: initial !important;
+  image-rendering: initial !important;
+  isolation: initial !important;
+  justify-content: initial !important;
+  left: initial !important;
+  letter-spacing: initial !important;
+  lighting-color: initial !important;
+  line-height: initial !important;
+  list-style: initial !important;
+  margin: initial !important;
+  marker: initial !important;
+  mask: initial !important;
+  mask-type: initial !important;
+  max-height: initial !important;
+  max-width: initial !important;
+  min-height: initial !important;
+  min-width: initial !important;
+  mix-blend-mode: initial !important;
+  object-fit: initial !important;
+  object-position: initial !important;
+  motion: initial !important;
+  offset-rotate: initial !important;
+  opacity: 1 !important;
+  order: initial !important;
+  orphans: initial !important;
+  outline: initial !important;
+  outline-offset: initial !important;
+  overflow-anchor: initial !important;
+  overflow-wrap: initial !important;
+  overflow: initial !important;
+  padding: initial !important;
+  paint-order: initial !important;
+  perspective: initial !important;
+  perspective-origin: initial !important;
+  pointer-events: none !important;
+  position: fixed !important;
+  quotes: initial !important;
+  resize: initial !important;
+  right: 0px !important;
+  r: initial !important;
+  rx: initial !important;
+  ry: initial !important;
+  shape-image-threshold: initial !important;
+  shape-margin: initial !important;
+  shape-outside: initial !important;
+  shape-rendering: initial !important;
+  size: initial !important;
+  speak: initial !important;
+  stop-color: initial !important;
+  stop-opacity: initial !important;
+  stroke: initial !important;
+  stroke-dasharray: initial !important;
+  stroke-dashoffset: initial !important;
+  stroke-linecap: initial !important;
+  stroke-linejoin: initial !important;
+  stroke-miterlimit: initial !important;
+  stroke-opacity: initial !important;
+  stroke-width: initial !important;
+  table-layout: initial !important;
+  tab-size: initial !important;
+  text-align: initial !important;
+  text-align-last: initial !important;
+  text-anchor: initial !important;
+  text-combine-upright: initial !important;
+  text-decoration: initial !important;
+  text-indent: initial !important;
+  text-overflow: initial !important;
+  text-shadow: initial !important;
+  text-size-adjust: initial !important;
+  text-transform: initial !important;
+  top: 0px !important;
+  touch-action: initial !important;
+  transform: initial !important;
+  transform-origin: initial !important;
+  transform-style: initial !important;
+  vector-effect: initial !important;
+  vertical-align: initial !important;
+  visibility: visible !important;
+  x: initial !important;
+  y: initial !important;
+  -webkit-appearance: initial !important;
+  -webkit-app-region: initial !important;
+  -webkit-background-clip: initial !important;
+  -webkit-background-origin: initial !important;
+  border-spacing: initial !important;
+  -webkit-border-image: initial !important;
+  -webkit-box-align: initial !important;
+  -webkit-box-decoration-break: initial !important;
+  -webkit-box-direction: initial !important;
+  -webkit-box-flex: initial !important;
+  -webkit-box-flex-group: initial !important;
+  -webkit-box-lines: initial !important;
+  -webkit-box-ordinal-group: initial !important;
+  -webkit-box-orient: initial !important;
+  -webkit-box-pack: initial !important;
+  -webkit-box-reflect: initial !important;
+  columns: initial !important;
+  column-gap: initial !important;
+  column-rule: initial !important;
+  column-span: initial !important;
+  -webkit-highlight: initial !important;
+  -webkit-hyphenate-character: initial !important;
+  -webkit-line-break: initial !important;
+  -webkit-line-clamp: initial !important;
+  -webkit-margin-collapse: initial !important;
+  -webkit-margin-bottom-collapse: initial !important;
+  -webkit-margin-top-collapse: initial !important;
+  -webkit-mask-box-image: initial !important;
+  -webkit-mask: initial !important;
+  -webkit-mask-composite: initial !important;
+  -webkit-perspective-origin-x: initial !important;
+  -webkit-perspective-origin-y: initial !important;
+  -webkit-print-color-adjust: initial !important;
+  -webkit-rtl-ordering: initial !important;
+  -webkit-ruby-position: initial !important;
+  -webkit-tap-highlight-color: initial !important;
+  -webkit-text-combine: initial !important;
+  -webkit-text-emphasis: initial !important;
+  -webkit-text-emphasis-position: initial !important;
+  -webkit-text-fill-color: initial !important;
+  -webkit-text-security: initial !important;
+  -webkit-text-stroke: initial !important;
+  -webkit-transform-origin-x: initial !important;
+  -webkit-transform-origin-y: initial !important;
+  -webkit-transform-origin-z: initial !important;
+  -webkit-user-drag: initial !important;
+  -webkit-user-modify: initial !important;
+  user-select: initial !important;
+  white-space: initial !important;
+  widows: initial !important;
+  width: initial !important;
+  will-change: initial !important;
+  word-break: initial !important;
+  word-spacing: initial !important;
+  word-wrap: initial !important;
+  z-index: 2147483649 !important;
+  -webkit-border-end: initial !important;
+  -webkit-border-start: initial !important;
+  -webkit-border-before: initial !important;
+  -webkit-border-after: initial !important;
+  -webkit-margin-end: initial !important;
+  -webkit-margin-start: initial !important;
+  -webkit-margin-before: initial !important;
+  -webkit-margin-after: initial !important;
+  -webkit-padding-end: initial !important;
+  -webkit-padding-start: initial !important;
+  -webkit-padding-before: initial !important;
+  -webkit-padding-after: initial !important;
+  -webkit-logical-width: initial !important;
+  -webkit-logical-height: initial !important;
+  -webkit-min-logical-width: initial !important;
+  -webkit-min-logical-height: initial !important;
+  -webkit-max-logical-width: initial !important;
+  -webkit-max-logical-height: initial !important;
+  page: initial !important;
+  -webkit-font-size-delta: initial !important;
+  -webkit-text-decorations-in-effect: initial !important;
+  font-family: avenir-next-lt, avenir, "OpenSans", "sans-serif", arial !important;
+    box-sizing: border-box !important;
+}
+#fs_cornerContent{
+  display: inline-block !important;
+  position: relative !important;
+  overflow: visible !important;
+  margin-top: 16px !important;
+  margin-right: 16px !important;
+  margin-left: 4px !important;
+  pointer-events: auto !important;
+  border-radius: 4px !important;
+  background-color: rgb(250, 250, 250) !important;
+  box-shadow: rgba(0, 0, 0, 0.298039) 1px 1px 6px !important;
+  box-sizing: content-box !important;
+}
+#fs_m_contaoner{
+  border-radius: 3px !important;
+  box-shadow: 0 15px 20px rgba(0,0,0,0.2) !important;
+  box-sizing: content-box !important;
+  width: 290px !important;
+}
+#fs_popup_image_cont
+{
+  text-align: center !important;
+  padding: 24px 28px !important;
+  background-color: rgb(255, 255, 255) !important;
+  border-radius: 3px !important;
+}
+.fs_save_money{
+  position: relative !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  padding: 12px 30px 11px !important;
+  display: inline-block !important;
+  outline: none !important;
+  line-height: initial !important;
+  border-radius: 60px !important;
+  text-align: center !important;
+  color: rgb(254, 255, 255) !important;
+  transition: box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: 18px 18px !important;
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #009688 !important;
+  background-color: #009688 !important;
+  cursor: pointer !important;
+  background-image: none !important;
+  width: 100% !important;
+  height: auto !important;
+  margin: 26px 0px 5px !important;
+}
+#fs_popup_logo{
+  height: 35px !important;
+  display: block !important;
+  margin: 0px 160px 10px 0px !important;
+}
+#fs_popup_close{
+  position: absolute !important;
+  top: 20px !important;
+  right: 18px !important;
+  padding: 0px !important;
+  cursor: pointer !important;
+  background-size: 100% !important;
+  height: 10px !important;
+  width: 10px !important;
+  border: none !important;
+  outline: none !important;
+  background-color: transparent !important;
+  transition: opacity 0.2s !important;
+  opacity: 1 !important;
+}
+#fs_popup_coupon_cont{
+  text-align: left !important;
+  font-size: 14px !important;
+  line-height: 1.6 !important;
+}
+#fs_popup_coupon_sub_cont{
+  margin: 0px 10px !important;
+  border-color: rgb(238, 238, 238) !important;
+  border-top-width: 1px !important;
+  border-top-style: solid !important;
+  border-bottom-width: 1px !important;
+  border-bottom-style: solid !important;
+  padding: 14px 0px !important; 
+}
+#fs_popup_coupon_count{
+  display: flex !important;
+  padding: 0px 10px !important;
+  margin: 0px !important;
+  color: rgb(41, 42, 42) !important;
+}
+#fs_popup_span2{
+  margin-left: auto !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+}
+#fs_popup_coupon_count a {
+    color: #3a99d9;
+    text-transform: none;
+}

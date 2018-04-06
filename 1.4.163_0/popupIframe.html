@@ -1,0 +1,64 @@
+<html>
+<head>
+<style type="text/css">
+a {
+	text-decoration: none;
+	color: white;
+}
+a:hover {
+	text-decoration: underline;
+	color: #AAAAD2;
+}
+img {
+	width: 120px;
+	height: 40px;
+	margin-right: 10px;
+}
+.popupdiv {
+	border: solid #AAAAFE 5px;
+	background: rgba(248,80,50,1);
+	background: -moz-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(231,56,39,0.8) 99%, rgba(241,111,92,0.8) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,80,50,1)), color-stop(99%, rgba(231,56,39,0.8)), color-stop(100%, rgba(241,111,92,0.8)));
+	background: -webkit-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(231,56,39,0.8) 99%, rgba(241,111,92,0.8) 100%);
+	background: -o-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(231,56,39,0.8) 99%, rgba(241,111,92,0.8) 100%);
+	background: -ms-linear-gradient(top, rgba(248,80,50,1) 0%, rgba(231,56,39,0.8) 99%, rgba(241,111,92,0.8) 100%);
+	background: linear-gradient(to bottom, rgba(248,80,50,1) 0%, rgba(231,56,39,0.8) 99%, rgba(241,111,92,0.8) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#f16f5c', GradientType=0 );
+	width:95%;
+	height: 80%;
+	border-radius: 10px;
+	color: white;
+	font-family: sans-serif;
+	line-height: 26px;
+}
+#fb_box {
+	margin-top: -5px;
+	padding: 10px;
+	padding-right: 10px;
+	border-radius: 5px;
+	width: 130px;
+}
+</style>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=368041323368234&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="popupdiv" style="background:darkblue">
+	<div align=center>
+		<p><img src="images/smily.png" style="width:20px;height:20px;position:relative;top:5px;" />Thank you for purchasing it <br> via <a href="#">Flipshope.</a><br>
+		Share it with your friends.</p>
+	</div>
+<div align=center>
+	<div id="fb_box" align=center>
+	<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fflipshope&amp;width=320&amp;layout=button_count&amp;action=like&amp;show_faces=true&amp;share=true&amp;height=21&amp;appId=368041323368234" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:125px; height:21px;" allowTransparency="true"></iframe>
+</div>
+</div>
+</body>
+
+</html>
